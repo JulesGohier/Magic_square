@@ -1,0 +1,89 @@
+
+[93mACE (AbsCon Essence)[0m v2.1 
+
+  [94minstance[0m
+    name:magic_double_square
+
+  Loading variables...
+
+  Loading constraints...
+
+  [94mdomains[0m
+    types:2  values:13312  sizes:[64:208]
+  [94mvariables[0m
+    count:208  auxiliary:144  arrays:1  degrees:[2:144,3:29,4:26,5:9]
+  [94mconstraints[0m
+    count:191  specific:47  groups:2  arities:[1:28,2:144,8:18,64:1]
+    distribution:[AllDifferentComplete:1,Extension1:28,ExtensionV-Bits:144,SumSimpleEQ:18]
+    extStructures:(144,shared:0)
+    wck:0.26  cpu:0.628  mem:30M853
+
+  Building solver... 
+
+  [94msolver[0m
+    guaranteedAC:false
+    wck:0.28  cpu:0.649  mem:33M999
+
+  [94mpreprocessing[0m
+    effs:776  revisions:(865,useless=143)  values:4152  removedByAC:9160  unsat:false
+    wck:0.017  cpu:0.669  mem:34M525
+
+    run:0  dpts:1..4  effs:1140  wrgs:10  wck:0.00  ngds:10
+    run:1  dpts:0..3  effs:1442  wrgs:21  wck:0.03  ngds:12
+    run:2  dpts:1..3  effs:1727  wrgs:33  wck:0.04  ngds:24
+    run:3  dpts:3..6  effs:2245  wrgs:46  wck:0.04  ngds:37
+    run:4  dpts:4..4  effs:2596  wrgs:60  wck:0.04  ngds:51
+    run:5  dpts:1..3  effs:2895  wrgs:76  wck:0.04  ngds:67
+    run:6  dpts:3..6  effs:3487  wrgs:93  wck:0.05  ngds:84
+    run:7  dpts:2..4  effs:3868  wrgs:112  wck:0.05  ngds:103
+    run:8  dpts:1..6  effs:4413  wrgs:133  wck:0.06  ngds:124
+    run:9  dpts:2..2  effs:4650  wrgs:156  wck:0.06  ngds:147
+    run:10  dpts:1..3  effs:5027  wrgs:181  wck:0.06  ngds:172
+    run:11  dpts:0..6  effs:5596  wrgs:209  wck:0.06  ngds:191
+    run:12  dpts:1..4  effs:6135  wrgs:241  wck:0.07  ngds:204
+    run:13  dpts:1..3  effs:6595  wrgs:277  wck:0.07  ngds:209
+    run:14  dpts:3..5  effs:7242  wrgs:314  wck:0.07  ngds:246
+    run:15  dpts:1..4  effs:7806  wrgs:356  wck:0.08  ngds:258
+    run:16  dpts:1..3  effs:8349  wrgs:403  wck:0.08  ngds:260
+    run:17  dpts:0..5  effs:9279  wrgs:454  wck:0.08  ngds:274
+    run:18  dpts:3..5  effs:10357  wrgs:513  wck:0.09  ngds:300
+    run:19  dpts:1..5  effs:11533  wrgs:578  wck:0.09  ngds:327
+    run:20  dpts:2..3  effs:12342  wrgs:647  wck:0.09  ngds:332
+    run:21  dpts:1..5  effs:13763  wrgs:724  wck:0.10  ngds:350
+    run:22  dpts:1..4  effs:15333  wrgs:813  wck:0.10  ngds:383
+    run:23  dpts:1..5  effs:16671  wrgs:905  wck:0.11  ngds:416
+    run:24  dpts:1..4  effs:18214  wrgs:1009  wck:0.12  ngds:455
+    run:25  dpts:2..5  effs:19514  wrgs:1120  wck:0.12  ngds:478
+    run:26  dpts:1..4  effs:21103  wrgs:1248  wck:0.13  ngds:487
+    run:27  dpts:1..3  effs:22997  wrgs:1383  wck:0.13  ngds:507
+    run:28  dpts:1..207  effs:24978  wrgs:1467  wck:0.14  ngds:507  sols:1
+
+  [94mglobal[0m
+    effs:24978  revisions:(23138,useless=994)  ngds:507
+    stop:REACHED_GOAL  wrgs:1467  sols:1  sol1Cpu:0.802
+    wck:0.43  cpu:0.802  mem:36M96
+
+
+  Solution 1 in JSON format:
+   {
+    x: [
+     [56, 34, 8, 57, 18, 47, 9, 31],
+     [33, 20, 54, 48, 7, 29, 59, 10],
+     [26, 43, 13, 23, 64, 38, 4, 49],
+     [19, 5, 35, 30, 53, 12, 46, 60],
+     [15, 25, 63, 2, 41, 24, 50, 40],
+     [6, 55, 17, 11, 36, 58, 32, 45],
+     [61, 16, 42, 52, 27, 1, 39, 22],
+     [44, 62, 28, 37, 14, 51, 21, 3]
+    ]
+   }
+
+[92ms SATISFIABLE[0m
+[92m
+v[0m <instantiation id='sol1' type='solution'> <list> x[][] </list> <values> 56 34 8 57 18 47 9 31 33 20 54 48 7 29 59 10 26 43 13 23 64 38 4 49 19 5 35 30 53 12 46 60 15 25 63 2 41 24 50 40 6 55 17 11 36 58 32 45 61 16 42 52 27 1 39 22 44 62 28 37 14 51 21 3 </values> </instantiation>
+[92m
+d WRONG DECISIONS[0m 1467
+[92md FOUND SOLUTIONS[0m 1
+[91md INCOMPLETE EXPLORATION[0m
+
+c real time : 0.813

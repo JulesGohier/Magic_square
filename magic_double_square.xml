@@ -1,0 +1,48 @@
+<instance format="XCSP3" type="CSP">
+  <variables>
+    <array id="x" size="[8][8]"> 1..64 </array>
+  </variables>
+  <constraints>
+    <allDifferent> x[][] </allDifferent>
+    <instantiation>
+      <list> x[0][0] x[0][2] x[0][4] x[0][6] x[1][1] x[1][4] x[1][7] x[2][0] x[2][2..3] x[2][5] x[3][2..3] x[3][5] x[3][7] x[4][1] x[4][4] x[4][6] x[5][2] x[5][4] x[5][6] x[6][1] x[6][3] x[6][5] x[7][0] x[7][2..3] x[7][6] </list>
+      <values> 56 8 18 9 20 7 10 26 13 23 38 35 30 12 60 25 41 50 17 36 32 16 52 1 44 28 37 21 </values>
+    </instantiation>
+    <group>
+      <sum>
+        <list> %... </list>
+        <condition> (eq,11180) </condition>
+      </sum>
+      <args> pow(x[0][0],2) pow(x[0][1],2) pow(x[0][2],2) pow(x[0][3],2) pow(x[0][4],2) pow(x[0][5],2) pow(x[0][6],2) pow(x[0][7],2) </args>
+      <args> pow(x[1][0],2) pow(x[1][1],2) pow(x[1][2],2) pow(x[1][3],2) pow(x[1][4],2) pow(x[1][5],2) pow(x[1][6],2) pow(x[1][7],2) </args>
+      <args> pow(x[2][0],2) pow(x[2][1],2) pow(x[2][2],2) pow(x[2][3],2) pow(x[2][4],2) pow(x[2][5],2) pow(x[2][6],2) pow(x[2][7],2) </args>
+      <args> pow(x[3][0],2) pow(x[3][1],2) pow(x[3][2],2) pow(x[3][3],2) pow(x[3][4],2) pow(x[3][5],2) pow(x[3][6],2) pow(x[3][7],2) </args>
+      <args> pow(x[4][0],2) pow(x[4][1],2) pow(x[4][2],2) pow(x[4][3],2) pow(x[4][4],2) pow(x[4][5],2) pow(x[4][6],2) pow(x[4][7],2) </args>
+      <args> pow(x[5][0],2) pow(x[5][1],2) pow(x[5][2],2) pow(x[5][3],2) pow(x[5][4],2) pow(x[5][5],2) pow(x[5][6],2) pow(x[5][7],2) </args>
+      <args> pow(x[6][0],2) pow(x[6][1],2) pow(x[6][2],2) pow(x[6][3],2) pow(x[6][4],2) pow(x[6][5],2) pow(x[6][6],2) pow(x[6][7],2) </args>
+      <args> pow(x[7][0],2) pow(x[7][1],2) pow(x[7][2],2) pow(x[7][3],2) pow(x[7][4],2) pow(x[7][5],2) pow(x[7][6],2) pow(x[7][7],2) </args>
+    </group>
+    <group>
+      <sum>
+        <list> %... </list>
+        <condition> (eq,11180) </condition>
+      </sum>
+      <args> pow(x[0][0],2) pow(x[1][0],2) pow(x[2][0],2) pow(x[3][0],2) pow(x[4][0],2) pow(x[5][0],2) pow(x[6][0],2) pow(x[7][0],2) </args>
+      <args> pow(x[0][1],2) pow(x[1][1],2) pow(x[2][1],2) pow(x[3][1],2) pow(x[4][1],2) pow(x[5][1],2) pow(x[6][1],2) pow(x[7][1],2) </args>
+      <args> pow(x[0][2],2) pow(x[1][2],2) pow(x[2][2],2) pow(x[3][2],2) pow(x[4][2],2) pow(x[5][2],2) pow(x[6][2],2) pow(x[7][2],2) </args>
+      <args> pow(x[0][3],2) pow(x[1][3],2) pow(x[2][3],2) pow(x[3][3],2) pow(x[4][3],2) pow(x[5][3],2) pow(x[6][3],2) pow(x[7][3],2) </args>
+      <args> pow(x[0][4],2) pow(x[1][4],2) pow(x[2][4],2) pow(x[3][4],2) pow(x[4][4],2) pow(x[5][4],2) pow(x[6][4],2) pow(x[7][4],2) </args>
+      <args> pow(x[0][5],2) pow(x[1][5],2) pow(x[2][5],2) pow(x[3][5],2) pow(x[4][5],2) pow(x[5][5],2) pow(x[6][5],2) pow(x[7][5],2) </args>
+      <args> pow(x[0][6],2) pow(x[1][6],2) pow(x[2][6],2) pow(x[3][6],2) pow(x[4][6],2) pow(x[5][6],2) pow(x[6][6],2) pow(x[7][6],2) </args>
+      <args> pow(x[0][7],2) pow(x[1][7],2) pow(x[2][7],2) pow(x[3][7],2) pow(x[4][7],2) pow(x[5][7],2) pow(x[6][7],2) pow(x[7][7],2) </args>
+    </group>
+    <sum>
+      <list> pow(x[0][0],2) pow(x[1][1],2) pow(x[2][2],2) pow(x[3][3],2) pow(x[4][4],2) pow(x[5][5],2) pow(x[6][6],2) pow(x[7][7],2) </list>
+      <condition> (eq,11180) </condition>
+    </sum>
+    <sum>
+      <list> pow(x[0][7],2) pow(x[1][6],2) pow(x[2][5],2) pow(x[3][4],2) pow(x[4][3],2) pow(x[5][2],2) pow(x[6][1],2) pow(x[7][0],2) </list>
+      <condition> (eq,11180) </condition>
+    </sum>
+  </constraints>
+</instance>
